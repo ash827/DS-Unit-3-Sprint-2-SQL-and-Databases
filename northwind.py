@@ -47,3 +47,35 @@ FROM Employee
 JOIN EmployeeTerritory
 	ON Employee.Id = EmployeeTerritory.EmployeeId
 ORDER BY EmployeeId;
+
+#Answering questions:
+
+#1.In the Northwind database, what is the type of
+# relationship between the Employee and Territory tables?
+
+#It looks to be a many to many relationship. There is a 
+# separate table that links them together, and that is the 
+# EmployeeTerritory table. You can join Employee and EmployeeTerritory
+# on the EmployeeId, and also link EmployeeTerritory with Territory
+# on TerritoryId.
+
+#2. What is a situation where a document store (like MongoDB) is 
+# appropriate, and what is a situation where it is not appropriate?
+
+#MongoDB is widely used for NoSQL (not only SQL) data. NoSQL is 
+# unstructured data, unlike Relational Databases. You can add or 
+# delete fields as needed. It also has a large amount of space to 
+# load large datasets into.
+
+#MongoDB is NOT appropriate when working with Relational Databases. 
+#. I believe it's missing the ACID component of Relational 
+# databases. 
+
+#3. What is "NewSQL", and what is it trying to achieve?
+# NewSQL is a new approach of SQL using Relational Database 
+# Management Systems (RDMS), by combining NoSQL to it for it's 
+# scalability, all while maintaining ACID guarantees.
+
+#ACID is Atomicity, Consistency, Isolation, Durability.
+#"Ensures consistent, safe and robust database modification
+# when saved"
