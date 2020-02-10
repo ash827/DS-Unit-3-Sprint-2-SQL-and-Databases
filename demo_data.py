@@ -86,3 +86,12 @@ def main():
 #Launch from command line 
 if __name__ == '__main__':
     main()
+
+
+#Example of code run in GitBash:
+#$ python demo_data.py
+#demo table has  3  rows
+#There are  2  rows where both x and y are at least 5
+#demo table has 2 distint values of y
+#demo table has 3 distint values of x
+#demo table has 3 distint values of s
